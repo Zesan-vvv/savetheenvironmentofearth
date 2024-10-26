@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved</title>
+    <style>
+        /* Basic reset and styling */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            color: #ffffff;
+        }
+
+        /* Blur overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(8px);
+        }
+
+        /* "Coming Soon" styling */
+        .coming-soon {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            filter: blur(1px); /* Adds slight blur to text */
+            animation: glow 1.5s ease-in-out infinite;
+        }
+
+        /* Back to Home button styling */
+        .back-home {
+            font-size: 1.3rem;
+            padding: 12px 25px;
+            background-color: rgba(10, 147, 150, 0.8);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            backdrop-filter: blur(3px);
+        }
+
+        .back-home:hover {
+            background-color: rgba(0, 95, 115, 0.8);
+        }
+
+        /* Glowing effect for "Coming Soon" */
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px rgba(0, 255, 255, 0.8); }
+            50% { text-shadow: 0 0 30px rgba(0, 255, 255, 0.5); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="coming-soon">Coming Soon...</div>
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+
+</body>
+</html>

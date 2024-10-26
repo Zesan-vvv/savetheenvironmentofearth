@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation bar styles */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #228B22;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+}
+
+/* Hover effect for links */
+header nav ul li a:hover {
+    color: #FFD700; /* Golden color on hover */
+}
+
+/* Smooth underline animation */
+header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFD700;
+    transition: width 0.3s ease-in-out; /* Smooth underline effect */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+header nav ul li a:hover::after {
+    width: 100%; /* Expands underline on hover */
+}
+
+/* Header styles */
+header {
+    background-color: #228B22;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Hero section */
+.hero {
+    background: url('index-bg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background: #228B22;
+    color: #fff;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Features section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.features .feature {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.features .feature h3 {
+    margin-bottom: 10px;
+}
+
+.features .feature p {
+    margin-bottom: 15px; /* Add margin below the paragraph text */
+}
+
+.features .feature .btn {
+    background: #228B22;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.features .feature .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

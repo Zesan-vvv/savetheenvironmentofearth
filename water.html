@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation and Pollution by Country</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: url('water.webp') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background: #005f73;
+            color: #ffffff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #0a9396;
+            border-radius: 5px;
+        }
+
+        /* Notice Board Styling */
+        .notice-board {
+            background: rgba(255, 255, 255, 0.8);
+            color: #005f73;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: relative;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 95, 115, 0.3);
+            animation: glow 1.5s ease-in-out infinite;
+        }
+
+        /* Arrow Icon */
+        .arrow-down {
+            font-size: 2rem;
+            margin-top: 10px;
+            color: #005f73;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        /* Glowing effect for notice board */
+        @keyframes glow {
+            0%, 100% { box-shadow: 0px 0px 15px rgba(0, 95, 115, 0.3); }
+            50% { box-shadow: 0px 0px 25px rgba(0, 95, 115, 0.6); }
+        }
+
+        /* Arrow Bounce Animation */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        /* Content Section Styling */
+        .content-section {
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .content-section strong {
+            color: #0a9396;
+        }
+
+        /* Country Slide Styling */
+        .country-slide {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            padding: 20px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .country-slide img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .back-home {
+            font-size: 1.3rem;
+            padding: 12px 25px;
+            background-color: rgba(10, 147, 150, 0.8);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            backdrop-filter: blur(3px); /* Adds blur to the button background */
+            display: block;
+            text-align: center;
+            margin: 30px auto;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#importance">Importance of Water Conservation</a></li>
+        <li><a href="#pollution">Water Pollution by Country</a></li>
+    </ul>
+</nav>
+
+<!-- Notice Board Section -->
+<div class="notice-board">
+    <p>Scroll Down for More</p>
+    <div class="arrow-down">⬇</div>
+</div>
+
+<!-- Water Conservation Content Section -->
+<section class="content-section" id="importance">
+    <h2>The Importance of Water Conservation</h2>
+    <p><strong>1. Essential for Life:</strong> Water is fundamental to every aspect of life on Earth. Every organism, from plants to animals and humans, relies on water for survival. Without clean and available water, our ecosystems, food supply, and health are at risk.</p>
+    <p><strong>2. Limited Resource:</strong> While Earth appears to have abundant water, only 1% of it is accessible freshwater. The remaining water is either saltwater in oceans or trapped in glaciers and polar ice caps. Thus, water is far scarcer than it may seem.</p>
+    <p><strong>3. Climate Change Impact:</strong> As temperatures rise, droughts and water shortages are becoming more frequent, affecting regions worldwide. Climate change disrupts natural water cycles, diminishing sources of drinking water and making conservation crucial.</p>
+    <p><strong>4. Pollution Threat:</strong> Industrial waste, chemicals, and pollutants severely threaten freshwater sources. Rivers, lakes, and groundwater reserves suffer contamination from human activities, further reducing the availability of clean water.</p>
+</section>
+
+<!-- Country-Specific Water Pollution Section -->
+<section class="content-section" id="pollution">
+    <h2>Water Pollution by Country</h2>
+
+    <div class="country-slide">
+        <img src="china.webp" alt="China Pollution">
+        <p><strong>China:</strong> China’s rapid industrialization has led to significant water pollution, with factories discharging untreated waste into major rivers, affecting both ecosystems and human health. Additionally, high population density exacerbates the issue, with municipal sewage often released into water bodies without proper treatment.</p>
+    </div>
+
+    <div class="country-slide">
+        <img src="india.jpg" alt="India Pollution">
+        <p><strong>India:</strong> In India, industrial waste and untreated sewage are primary contributors to water pollution. Major rivers, such as the Ganges, are severely polluted by untreated municipal and industrial waste, leading to health risks for people and wildlife.</p>
+    </div>
+
+    <div class="country-slide">
+        <img src="bangladesh.jpg" alt="Bangladesh Pollution">
+        <p><strong>Bangladesh:</strong> Water pollution in Bangladesh is largely due to the discharge of toxic chemicals from the textile and dyeing industries into rivers. This results in severe contamination, particularly in the Buriganga River.</p>
+    </div>
+
+    <div class="country-slide">
+        <img src="usa.JPG" alt="USA Pollution">
+        <p><strong>USA:</strong> In the United States, water pollution is often caused by agricultural runoff, which introduces large amounts of pesticides, herbicides, and fertilizers into rivers and lakes. Industrial waste and plastic pollution also play significant roles in degrading water quality.</p>
+    </div>
+
+    <div class="country-slide">
+        <img src="mexico.jpg" alt="Mexico Pollution">
+        <p><strong>Mexico:</strong> In Mexico, water pollution is largely due to industrial discharge and agricultural runoff, which introduce harmful chemicals and pollutants into the country’s water bodies.</p>
+    </div>
+
+    <div class="country-slide">
+        <img src="nigeria.jpg" alt="Nigeria Pollution">
+        <p><strong>Nigeria:</strong> Oil pollution in the Niger Delta and urban waste are major sources of water contamination. Lack of sanitation infrastructure exacerbates the problem.</p>
+    </div>
+
+    <div class="country-slide">
+        <img src="brazil.jpg" alt="Brazil Pollution">
+        <p><strong>Brazil:</strong> The Amazon faces pollution from mining and deforestation, contaminating rivers with mercury and sediment. Industrial and urban waste also affect water quality.</p>
+    </div>
+
+    <a href="index.html" class="back-home">Back to Home</a>
+</section>
+
+</body>
+</html>

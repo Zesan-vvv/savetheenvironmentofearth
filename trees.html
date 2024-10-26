@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees - Guardians of Our Planet</title>
+    <meta name="description" content="Learn about the importance of trees for the planet, their role in air purification, biodiversity support, and climate stabilization. Join the movement to protect our trees.">
+    <meta name="keywords" content="trees, environment, air purification, biodiversity, climate stabilization, tree conservation">
+    <meta name="author" content="Your Name"> <!-- Replace with your name or organization -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+            border-radius: 5px;
+        }
+
+        /* Background and Section Styling */
+        .hero {
+            background: url('tree.webp') no-repeat center center;
+            background-size: cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Counter Box Styling */
+        .counter-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .counter-box {
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            background-color: #34495e;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .counter-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .counter-box p {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        
+        /* Timer-style Effect */
+        .timer-style {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .back-home {
+            font-size: 1.3rem;
+            padding: 12px 25px;
+            background-color: rgba(10, 147, 150, 0.8);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            backdrop-filter: blur(3px); /* Adds blur to the button background */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#importance">Why Trees Matter</a></li>
+        <li><a href="#counter">Tree Counter</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero" id="hero">
+    <h1>Protecting Our Trees</h1>
+    <p>Trees are the lifeblood of our planet. They filter the air, stabilize the climate, and support ecosystems that sustain countless species, including humans. Every tree plays a vital role in maintaining Earth's balance, yet every day, thousands are lost. Let's learn why trees matter and what we can do to protect them.</p>
+</div>
+
+<!-- Content Section -->
+<section class="content-section" id="importance">
+    <h2>The Importance of Trees</h2>
+    <div class="content">
+        <p><strong>1. Air Purification:</strong> Trees are natural air purifiers, absorbing pollutants like carbon dioxide, sulfur dioxide, and ammonia. They produce oxygen, essential for life on Earth, and reduce greenhouse gases, helping combat climate change.</p>
+        <p><strong>2. Biodiversity Support:</strong> Trees provide shelter and food for countless animals, insects, and other plant species. Forests are among the most biodiverse ecosystems on Earth, and without trees, these ecosystems would collapse.</p>
+        <p><strong>3. Water Conservation:</strong> Trees help retain water in soil, preventing runoff and erosion. Their roots stabilize soil, reducing landslides and protecting water quality in rivers and lakes by filtering pollutants.</p>
+        <p><strong>4. Climate Stabilization:</strong> Trees absorb and store carbon, reducing the atmospheric carbon that contributes to global warming. Forests are essential for maintaining stable temperatures and preventing extreme weather events.</p>
+        <p><strong>5. Economic Value:</strong> Trees contribute to economies by providing raw materials like wood, paper, and fruits. They also promote eco-tourism, creating jobs and sustaining local economies.</p>
+        <p>Our actions today have a direct impact on the future of our planet. By planting trees, reducing deforestation, and supporting sustainable practices, we can make a difference. Protecting trees isn't just about saving the environment; it's about preserving our health, economy, and future.</p>
+    </div>
+</section>
+
+<!-- Counter Section -->
+<div class="counter-container" id="counter">
+    <!-- Trees Cut Counter -->
+    <div class="counter-box">
+        <h3>Trees Cut Down Today</h3>
+        <p id="trees-cut-counter" class="timer-style">Loading...</p>
+    </div>
+    <!-- Trees Planted Counter -->
+    <div class="counter-box">
+        <h3>Trees Planted Today</h3>
+        <p id="trees-planted-counter" class="timer-style">Loading...</p>
+    </div>
+</div>
+
+<div class="overlay">
+    <a href="index.html" class="back-home">Back to Home</a>
+</div>
+
+<!-- JavaScript for Counters -->
+<script>
+    function updateCounters() {
+        const treesCutPerDay = 80000;
+        const treesPlantedPerDay = 30000;
+        const secondsInDay = 86400;
+
+        const treesCutPerSecond = treesCutPerDay / secondsInDay;
+        const treesPlantedPerSecond = treesPlantedPerDay / secondsInDay;
+
+        const startTime = new Date().setHours(0, 0, 0, 0); // Start of day in ms
+        const currentTime = Date.now();
+        const secondsElapsed = (currentTime - startTime) / 1000;
+
+        const treesCut = Math.floor(treesCutPerSecond * secondsElapsed);
+        const treesPlanted = Math.floor(treesPlantedPerSecond * secondsElapsed);
+
+        document.getElementById("trees-cut-counter").innerText = treesCut.toLocaleString();
+        document.getElementById("trees-planted-counter").innerText = treesPlanted.toLocaleString();
+    }
+
+    // Update counters every second
+    setInterval(updateCounters, 1000);
+</script>
+
+</body>
+</html>
